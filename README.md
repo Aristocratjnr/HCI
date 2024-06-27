@@ -1,4 +1,4 @@
-# Furnish
+# Sadal
 
  <img src="images/screenshot.png" alt="project">
 
@@ -18,4 +18,4 @@
 
  The about and contact pages are not yet built.
  
- Link URL = https://abdulsamadayoade.github.io/Furnish
+ Link URL = https://github.com/Aristocratjnr/HCI
