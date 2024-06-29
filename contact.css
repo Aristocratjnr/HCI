@@ -1,0 +1,78 @@
+/* CONTACT PAGE STYLES */
+.contact {
+    padding: 5rem 0;
+}
+
+.contact h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact p {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 4rem;
+}
+
+.contact-item {
+    text-align: center;
+    flex-basis: 30%;
+}
+
+.contact-item i {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.contact-item p {
+    font-size: 1.6rem;
+}
+
+.contact-form {
+    max-width: 50rem;
+    margin: auto;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form .form-group {
+    margin-bottom: 2rem;
+}
+
+.contact-form label {
+    margin-bottom: .5rem;
+    font-size: 1.4rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border: 1px solid #ddd;
+    border-radius: .5rem;
+}
+
+.contact-form button {
+    align-self: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-item {
+        margin-bottom: 3rem;
+    }
+}
