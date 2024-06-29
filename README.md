@@ -16,6 +16,4 @@
 
  And Individual Page For Each Product
 
- The about and contact pages are not yet built but yet to build.
- 
- Link URL = https://github.com/Aristocratjnr/HCI
+Link URL = https://github.com/Aristocratjnr/HCI
