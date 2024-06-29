@@ -1,0 +1,53 @@
+/* ABOUT PAGE STYLES */
+.about {
+    padding: 5rem 0;
+}
+
+.about h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.about p {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.about-text {
+    flex-basis: 50%;
+    padding: 2rem;
+    font-size: 1.6rem;
+}
+
+.about-image {
+    flex-basis: 40%;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text {
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 80%;
+    }
+}
