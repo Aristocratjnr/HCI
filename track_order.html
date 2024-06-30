@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Order - Sadal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="app.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="track_order.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <a class="logo" href="index.html">Sadal</a>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="account.html">Account</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="track_order.html">Track Order</a></li>
+                </ul>
+                <div>
+                    <!-- Icons for user, wishlist, and cart -->
+                </div>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- TRACK ORDER SECTION -->
+    <section class="track-order">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <h1>Track Your Order</h1>
+                    <p>Enter your Order ID and Email to track the status of your order.</p>
+                    <form action="track_order.php" method="post">
+                        <input type="text" name="order_id" placeholder="Order ID" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <button type="submit" class="btn">Track Order</button>
+                    </form>
+                </div>
+                <div class="col-2">
+                    <img src="images/track-order.png" alt="Track Order">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <!-- Footer content -->
+            </div>
+            <hr>
+            <p class="footer-copy" align="center">&copy; 2024 Aristocrat Jnr. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
