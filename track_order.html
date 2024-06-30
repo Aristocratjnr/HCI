@@ -11,6 +11,14 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="track_order.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelector('form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                document.getElementById('order-status').textContent = '✅Your order is in process...';
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -64,7 +72,7 @@
                 <div class="col-2">
                     <h1>Track Your Order</h1>
                     <p>Enter your Order ID and Email to track the status of your order.</p>
-                    <form method="post" action="submit_form.php">
+                    <form method="post">
                         <label for="order_id">Order ID:</label>
                         <input type="text" id="order_id" name="order_id" required><br><br>
                         
@@ -73,6 +81,7 @@
                         
                         <input type="submit" value="Track Order">
                     </form>
+                    <p id="order-status" style="color: green; font-weight: bold;"></p>
                 </div>
                 <div class="col-2">
                     <img src="images/track-order.png" alt="Track Order">
