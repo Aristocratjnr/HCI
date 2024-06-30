@@ -8,14 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;600&display=swap" rel="stylesheet">
     <script src="app.js" defer></script>
-    <link rel="icon" type="image/x-icon" href="images\favicon.ico">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="style.css">
-    
 </head>
 
 <body>
     <!-- HEADER -->
-
     <header>
         <div class="container">
             <div class="navbar">
@@ -59,12 +57,11 @@
     </header>
 
     <!-- ACCOUNT PAGE -->
-
     <section class="account">
         <div class="container">
             <div class="row">
                 <div class="col-2">
-                    <img src="images/hero-image.png">
+                    <img src="images/hero-image.png" alt="Hero Image">
                 </div>
                 <div class="col-2">
                     <div class="form-container">
@@ -75,14 +72,20 @@
                         </div>
                         <form id="LoginForm">
                             <input type="text" placeholder="Username">
-                            <input type="password" placeholder="Password">
+                            <div class="password-container">
+                                <input type="password" placeholder="Password" id="loginPassword">
+                                <i class="fas fa-eye" id="toggleLoginPassword"></i>
+                            </div>
                             <button type="submit" class="btn">Login</button>
                             <a href="#"><code>Forgot Password?</code></a>
                         </form>
                         <form id="RegForm">
                             <input type="text" placeholder="Username">
                             <input type="email" placeholder="Email">
-                            <input type="password" placeholder="Password">
+                            <div class="password-container">
+                                <input type="password" placeholder="Password" id="registerPassword">
+                                <i class="fas fa-eye" id="toggleRegisterPassword"></i>
+                            </div>
                             <button type="submit" class="btn">Register</button>
                         </form>
                     </div>
@@ -97,7 +100,7 @@
             <div class="row">
                 <div class="footer-col-1">
                     <a class="logo" href="index.html">Sadal</a>
-                    <p>Affordable and Best Furnitures </p>
+                    <p>Affordable and Best Furnitures</p>
                 </div>
                 <div class="footer-col-2">
                     <h4>Help</h4>
@@ -118,55 +121,74 @@
                 <div class="footer-col-4">
                     <h4>Follow Us</h4>
                     <ul>
-                        <li><a href="#">Instgram</a></li>
+                        <li><a href="#">Instagram</a></li>
                         <li><a href="#">YouTube</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-        <footer>     <center>
-            <p>&copy; 2024 Aristocrat Jnr. All rights reserved.</p>
-        </footer></center>
-        
+        <footer>
+            <center>
+                <p>&copy; 2024 Aristocrat Jnr. All rights reserved.</p>
+            </center>
+        </footer>
     </footer>
     <script>
         // Get the login and register forms
-const loginForm = document.getElementById('LoginForm');
-const registerForm = document.getElementById('RegForm');
+        const loginForm = document.getElementById('LoginForm');
+        const registerForm = document.getElementById('RegForm');
 
-// Add event listeners to the forms
-loginForm.addEventListener('submit', function(event) {
-  event.preventDefault(); // Prevent the form from submitting
+        // Add event listeners to the forms
+        loginForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting
 
-  // Get the input values
-  const username = loginForm.querySelector('input[type="text"]').value;
-  const password = loginForm.querySelector('input[type="password"]').value;
+            // Get the input values
+            const username = loginForm.querySelector('input[type="text"]').value;
+            const password = loginForm.querySelector('input[type="password"]').value;
 
-  // Check if all fields are filled
-  if (username.trim() === '' || password.trim() === '') {
-    alert('Please fill in all the fields.');
-  } else {
-    // Submit the form or perform other actions
-    alert('Login successful!');
-  }
-});
+            // Check if all fields are filled
+            if (username.trim() === '' || password.trim() === '') {
+                alert('Please fill in all the fields.');
+            } else {
+                // Submit the form or perform other actions
+                alert('Login successful!');
+            }
+        });
 
-registerForm.addEventListener('submit', function(event) {
-  event.preventDefault(); // Prevent the form from submitting
+        registerForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting
 
-  // Get the input values
-  const username = registerForm.querySelector('input[type="text"]').value;
-  const email = registerForm.querySelector('input[type="email"]').value;
-  const password = registerForm.querySelector('input[type="password"]').value;
+            // Get the input values
+            const username = registerForm.querySelector('input[type="text"]').value;
+            const email = registerForm.querySelector('input[type="email"]').value;
+            const password = registerForm.querySelector('input[type="password"]').value;
 
-  // Check if all fields are filled
-  if (username.trim() === '' || email.trim() === '' || password.trim() === '') {
-    alert('Please fill in all the fields.');
-  } else {
-    // Submit the form or perform other actions
-    alert('Registration successful!');
-  }
-});
+            // Check if all fields are filled
+            if (username.trim() === '' || email.trim() === '' || password.trim() === '') {
+                alert('Please fill in all the fields.');
+            } else {
+                // Submit the form or perform other actions
+                alert('Registration successful!');
+            }
+        });
+
+        // Eye toggle functionality
+        const togglePassword = (inputId, toggleIconId) => {
+            const passwordInput = document.getElementById(inputId);
+            const toggleIcon = document.getElementById(toggleIconId);
+
+            toggleIcon.addEventListener('click', () => {
+                const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+                passwordInput.setAttribute('type', type);
+
+                // Toggle the icon
+                toggleIcon.classList.toggle('fa-eye');
+                toggleIcon.classList.toggle('fa-eye-slash');
+            });
+        };
+
+        togglePassword('loginPassword', 'toggleLoginPassword');
+        togglePassword('registerPassword', 'toggleRegisterPassword');
     </script>
 </body>
 
