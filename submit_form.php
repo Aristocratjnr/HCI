@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Check if all required fields are filled out
     if ($name && $email && $subject && $message) {
         // Recipient email address
-        $to = "your-email@example.com";
+        $to = "ayimobuobi@gmail.com";
         $email_subject = "Contact Form: $subject";
         $email_body = "You have received a new message from the contact form on your website.\n\n".
                       "Here are the details:\n\n".
