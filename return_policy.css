@@ -1,0 +1,44 @@
+/* RETURN POLICY PAGE STYLES */
+
+.return-policy {
+    padding: 5rem 0;
+    background-color: #f2f0f1;
+}
+
+.return-policy .container {
+    max-width: 100rem;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+.return-policy h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    margin-bottom: 2rem;
+    color: #1d1d1d;
+}
+
+.return-policy h2 {
+    font-size: 2.5rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.return-policy p {
+    font-size: 1.8rem;
+    color: #4c4c43;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.return-policy a {
+    color: #f42153;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.return-policy a:hover {
+    color: #1d1d1d;
+}
