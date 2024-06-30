@@ -1,0 +1,91 @@
+/* STORE LOCATOR PAGE STYLES */
+
+.store-locator {
+    padding: 5rem 0;
+    background-color: #f2f0f1;
+}
+
+.store-locator .container {
+    max-width: 100rem;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+.store-locator h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    margin-bottom: 2rem;
+    color: #1d1d1d;
+}
+
+.store-locator p {
+    font-size: 1.8rem;
+    color: #4c4c43;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.search-bar input {
+    padding: 1.2rem 2rem;
+    border: 1px solid #ddd;
+    font-size: 1.8rem;
+    outline: none;
+    font-family: "Josefin Sans", sans-serif;
+    width: 60%;
+    margin-right: 1rem;
+}
+
+.search-bar .btn {
+    padding: 1.2rem 2rem;
+    font-size: 1.8rem;
+    font-family: "EBGaramondItalic";
+    background-color: #4c4c43;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-bar .btn:hover {
+    background-color: #333;
+}
+
+.store-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.store-item {
+    background-color: #fff;
+    padding: 2rem;
+    margin: 1rem;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+    flex-basis: 45%;
+    min-width: 30rem;
+    border-radius: 0.5rem;
+}
+
+.store-item h2 {
+    font-size: 2.5rem;
+    color: #1d1d1d;
+    margin-bottom: 1rem;
+}
+
+.store-item p {
+    font-size: 1.8rem;
+    color: #555;
+    margin: 0.5rem 0;
+}
+
+.store-item i {
+    color: #f42153;
+    margin-right: 0.5rem;
+}
