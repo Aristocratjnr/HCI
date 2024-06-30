@@ -45,10 +45,14 @@
                 <div class="col-2">
                     <h1>Track Your Order</h1>
                     <p>Enter your Order ID and Email to track the status of your order.</p>
-                    <form action="track_order.php" method="post">
-                        <input type="text" name="order_id" placeholder="Order ID" required>
-                        <input type="email" name="email" placeholder="Email" required>
-                        <button type="submit" class="btn">Track Order</button>
+                    <form method="post" action="submit_form.php">
+                        <label for="order_id">Order ID:</label>
+                        <input type="text" id="order_id" name="order_id" required><br><br>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br><br>
+                        
+                        <input type="submit" value="Track Order">
                     </form>
                 </div>
                 <div class="col-2">
