@@ -12,157 +12,88 @@
     <script src="app.js" defer></script>
     <style>
         /* Style adjustments specific to directors page */
-        .directors {
-            padding: 5rem 0;
-            text-align: center;
-        }
-
-        .directors h2 {
-            font-size: 2rem;
-            margin-bottom: 2rem;
-            font-family: 'Josefin Sans', sans-serif;
-        }
-
-        .director-card {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 2rem;
-            border: 1px solid #ccc;
-            padding: 1rem;
-            max-width: 600px;
-            margin: auto;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            background-color: #fff;
-            border-radius: 8px;
-        }
-
-        .director-card img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            margin-right: 1rem;
-        }
-
-        .director-info {
-            text-align: left;
-        }
-
-        .director-info h3 {
-            margin: 0.5rem 0;
-            font-size: 1.5rem;
-        }
-
-        .director-info p {
-            margin-bottom: 0.5rem;
-            color: #555;
-        }
-        
-        /* MEDIA QUERIES */
-
-@media only screen and (max-width: 800px) {
-
-.menu-toggle {
-    display: block;
+       /* Style adjustments specific to directors page */
+.directors {
+    padding: 5rem 0;
+    text-align: center;
 }
 
-.fa-bars {
-    color: var(--primary-color);
+.directors h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
-.fa-times {
-    display: none;
-}
-
- .nav-list {
-    background-color: #4c4c43;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-height: 100vh;
-    flex-direction: column;
+.director-card {
+    display: flex;
     justify-content: center;
-    align-items: center;
-    transform: translateY(-100%);
-    transition: transform .5s;
-    z-index: 100;
+    margin-bottom: 2rem;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
 }
 
- .nav-list li:not(:last-child) {
-     margin-right: 0;
- }
-
- .nav-list li {
-     margin: 3.5rem 0;
- }
-
- .menu-toggle.show .fa-bars {
-     display: none;
- }
-
- .menu-toggle.show .fa-times {
-     display: block;
- }
-
- .nav-list.show {
-     transform: translateY(0);
- }
-
- .navbar a {
-     color: #e3ebf0;
- }
-
- .logo {
-     color: var(--primary-color) !important;
- }
-
- .navbar svg {
-     display: none;
- }
-
- .footer-col-1 p {
-     line-height: 1.4;
- }
+.director-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 1rem;
 }
 
+.director-info {
+    text-align: left;
+}
 
-@media screen and (max-width: 600px) {
- .row {
-     text-align: center;
- }
+.director-info h3 {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+}
 
- .offer .col-2:last-child {
-     padding-left: 0;
-     margin-top: 5rem;
- }
+.director-info p {
+    margin-bottom: 0.5rem;
+    color: #555;
+}
 
- .offer small {
-     text-align: center;
- }
+/* Media Queries */
+@media (max-width: 800px) {
+    .director-card {
+        flex-direction: column;
+        align-items: center;
+    }
 
- .col-2, .col-3, .col-4 {
-     flex-basis: 100%;
- }
+    .director-card img {
+        margin: 0 0 1rem 0;
+    }
 
- .single-product .row {
-     text-align: left;
- }
+    .director-info {
+        text-align: center;
+    }
+}
 
- .single-product .col-2 {
-     padding: 2rem 0;
- }
+@media (max-width: 600px) {
+    .directors {
+        padding: 3rem 0;
+    }
 
- .single-product h1 {
-     font-size: 2.5rem;
- }
+    .directors h2 {
+        font-size: 1.5rem;
+    }
 
- .view-more {
-     display: none;
- }
- 
- .account .col-2:first-child {
-     display: none;
- }
+    .director-card {
+        padding: 0.5rem;
+    }
+
+    .director-info h3 {
+        font-size: 1.2rem;
+    }
+
+    .director-info p {
+        font-size: 0.9rem;
+    }
 }
 
     </style>
