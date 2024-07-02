@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <script src="../app.js" defer></script>
-    <link rel="icon" type="image/x-icon" href="images\favicon.ico">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="../style.css">
 </head>
 
@@ -79,7 +79,7 @@
                             <option>4</option>
                             <option>5</option>
                         </select>
-                        <a href="#" class="btn">Add To Cart</a>
+                        <a href="#" class="btn" id="addToCartBtn">Add To Cart</a>
                     </div>
                     <a href="#" class="wish">
                         <svg xmlns="http://www.w3.org/2000/svg" class="qodef-wishlist-heart-svg" x="0px" y="0px"
@@ -135,7 +135,7 @@
                     </a>
                 </div>
                 <div class="col-4">
-                    x<a href="comfy-chair.html">
+                    <a href="comfy-chair.html">
                         <img src="../images/shop-5.jpg">
                         <h4>Comfy Chair</h4>
                         <div class="rating">
@@ -166,8 +166,6 @@
         </div>
     </section>
 
-
-
     <!-- FOOTER SECTION -->
     <footer>
         <div class="container">
@@ -195,15 +193,23 @@
                     <h4>Follow Us</h4>
                     <ul>
                         <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Instgram</a></li>
+                        <li><a href="#">Instagram</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-        <footer>     <center>
+        <center>
             <p>&copy; 2024 Aristocrat Jnr. All rights reserved.</p>
-        </footer></center>
+        </center>
     </footer>
+
+    <script>
+        // Add to Cart functionality
+        document.getElementById('addToCartBtn').addEventListener('click', function(event) {
+            event.preventDefault();
+            alert('The item has been added to your cart.');
+        });
+    </script>
 </body>
 
 </html>
