@@ -78,7 +78,7 @@
                             <option>4</option>
                             <option>5</option>
                         </select>
-                        <a href="#" class="btn">Add To Cart</a>
+                        <a href="#" class="btn" id="addToCartBtn">Add To Cart</a>
                     </div>
                     <a href="#" class="wish">
                         <svg xmlns="http://www.w3.org/2000/svg" class="qodef-wishlist-heart-svg" x="0px" y="0px"
@@ -204,6 +204,13 @@
             <p>&copy; 2024 Aristocrat Jnr. All rights reserved.</p>
         </footer></center>
     </footer>
+    <script>
+        // Add to Cart functionality
+        document.getElementById('addToCartBtn').addEventListener('click', function(event) {
+            event.preventDefault();
+            alert('The item has been added to your cart.');
+        });
+    </script>
 </body>
 
 </html>
