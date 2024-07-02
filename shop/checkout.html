@@ -241,6 +241,13 @@
             <p>&copy; 2024 Aristocrat Jnr. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        // Select the form and listen for its submission
+        document.querySelector('.checkout-form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent default form submission
+            alert('✅ Your order has been placed!');
+        });
+    </script>
 </body>
 
 </html>
