@@ -13,6 +13,8 @@
  3. Account
  4. About
  5. Contact
+ 6. Track Order
+ 7. Directors
 
  And Individual Page For Each Product
 
