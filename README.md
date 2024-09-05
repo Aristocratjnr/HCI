@@ -18,4 +18,4 @@
 
  And Individual Page For Each Product
 
-Link URL = https://github.com/Aristocratjnr/HCI
+Link URL = https://aristocratjnr.github.io/HCI/
